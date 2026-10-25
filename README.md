@@ -73,7 +73,7 @@ The digital content provenance and deepfake detection sector is currently valued
 
 *The following open-source frameworks, C2PA reference libraries, and deepfake detection engines are sorted in descending order by GitHub stargazers count.*
 
-| Repository / Tool | Stars Badge | Language / Core Tech | Description | Stargazers Link |
+| Repository / Tool | Stars_Badge | Language / Core Tech | Description | Stargazers Link |
 | :--- | :---: | :--- | :--- | :--- |
 | **[invisible-watermark](https://github.com/ShieldMnt/invisible-watermark)** | [![Stars](https://img.shields.io/github/stars/ShieldMnt/invisible-watermark?style=social&color=white)](https://github.com/ShieldMnt/invisible-watermark/stargazers) | Python | Industry-standard invisible image watermarking library implementing DWT, DCT, and RivaGAN (used by Stable Diffusion to embed provenance signals). | [1,990+ Stargazers](https://github.com/ShieldMnt/invisible-watermark/stargazers) |
 | **[DeepfakeBench](https://github.com/SCLBD/DeepfakeBench)** | [![Stars](https://img.shields.io/github/stars/SCLBD/DeepfakeBench?style=social&color=white)](https://github.com/SCLBD/DeepfakeBench/stargazers) | Python / PyTorch | Comprehensive benchmark platform and evaluation framework providing unified implementations of 15+ deepfake detection algorithms. | [1,135+ Stargazers](https://github.com/SCLBD/DeepfakeBench/stargazers) |
@@ -129,7 +129,7 @@ Contributions make the open-source and content provenance ecosystem flourish! �
 
 1. **Fork the Repository** 🍴
 2. **Create a Feature Branch** (`git checkout -b feature/add-new-provenance-tool`)
-3. **Add Your Entry**: Ensure SaaS entries include specific starting prices, exact free trial / free tier limits, and valuation/company size. For open-source tools, include the GitHub repository and social star badge.
+3. **Add Your Entry**: Ensure SaaS entries include specific starting prices, exact free trial / free tier limits, and valuation/company size. For open-source tools, include the GitHub repository and social Stars_Badge.
 4. **Follow Formatting Guidelines**: Ensure markdown tables remain consistent and all links are functional.
 5. **Open a Pull Request** 🚀
 
