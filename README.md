@@ -1,218 +1,94 @@
-# Awesome-Digital-Content-Provenance
-# Awesome-Digital-Content-Provenance
+# Awesome Digital Content Provenance [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-## Top Digital Content Provenance
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**
-
-
-
-*Focused on Content Authenticity, C2PA, Provenance Tracking, Watermarking, Deepfake Detection & Media Verification*
-
-
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Digital Content Provenance**. These tools help creators, platforms, and consumers establish, attach, verify, and inspect the origin and history of digital media (images, video, audio, and documents), especially in the era of generative AI.
-
-
-
-**Examples** include Adobe Content Authenticity, Truepic, Attestiv, Numbers Protocol, Sensity AI, Reality Defender, GetReal Security, Hive AI, Optic, and C2PA Verify (the category leaders).
-
-
-
-**Open-source emphasis**: Content provenance has a strong open foundation thanks to the **C2PA** standard and the **Content Authenticity Initiative (CAI)**. Official open-source SDKs (**c2pa-rs**, **c2patool**, language bindings), watermarking tools like **TrustMark**, and community verifiers enable transparent, standards-based provenance. This section is heavily expanded.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-- **[Adobe Content Authenticity / Content Credentials](https://contentauthenticity.org/)**  
-
-  Adobe-led initiative and tooling for attaching and verifying Content Credentials (C2PA) across Creative Cloud applications and the wider ecosystem.
-
-
-
-- **[Truepic](https://truepic.com/)**  
-
-  Platform focused on authenticated capture, secure provenance, and verification of photos and videos for trust and compliance use cases.
-
-
-
-- **[Attestiv](https://attestiv.com/)**  
-
-  Digital media integrity and provenance platform offering authentication, verification, and fraud detection for visual content.
-
-
-
-- **[Numbers Protocol](https://www.numbersprotocol.io/)**  
-
-  Decentralized infrastructure for digital media provenance using blockchain and open standards to create verifiable content history.
-
-
-
-- **[Sensity AI](https://sensity.ai/)**  
-
-  AI-powered platform specializing in deepfake detection, synthetic media identification, and content authenticity analysis.
-
-
-
-- **[Reality Defender](https://www.realitydefender.com/)**  
-
-  Enterprise deepfake and synthetic media detection platform supporting multiple modalities (image, video, audio, text).
-
-
-
-- **[GetReal Security](https://www.getrealsecurity.com/)**  
-
-  Security-focused solution for detecting manipulated and synthetic media with provenance and forensic capabilities.
-
-
-
-- **[Hive AI](https://thehive.ai/)**  
-
-  AI moderation and detection platform that includes tools for identifying AI-generated and manipulated content.
-
-
-
-- **[Optic](https://www.optic.com/)** (and similar verification services)  
-
-  Tools and services focused on visual content authenticity and provenance verification.
-
-
-
-- **[C2PA Verify (contentcredentials.org)](https://contentcredentials.org/verify)**  
-
-  Official web-based verifier for inspecting Content Credentials and C2PA manifests attached to media files.
-
-
-
-## Open-Source GitHub Projects
-
-- **[c2pa-rs](https://github.com/contentauth/c2pa-rs)**  
-
-  Official Rust SDK and reference implementation for the C2PA (Coalition for Content Provenance and Authenticity) specification. Core library used by most C2PA tooling.
-
-
-
-- **[c2patool](https://github.com/contentauth/c2patool)**  
-
-  Official command-line tool for reading, validating, creating, and embedding C2PA manifests into media files. Essential for developers and forensic workflows.
-
-
-
-- **[c2pa-python](https://github.com/contentauth/c2pa-python)**  
-
-  Official Python bindings for the c2pa-rs library, enabling easy integration of Content Credentials into Python applications and pipelines.
-
-
-
-- **[c2pa-js](https://github.com/contentauth/c2pa-js)**  
-
-  JavaScript/TypeScript libraries for reading and working with C2PA manifests in browsers and Node.js environments.
-
-
-
-- **[c2pa-cpp](https://github.com/contentauth/c2pa-cpp)**  
-
-  Official C++ bindings for C2PA, useful for native applications and high-performance environments.
-
-
-
-- **[TrustMark](https://github.com/adobe/trustmark)**  
-
-  Open-source watermarking implementation for durable Content Credentials. Supports encoding, decoding, and removing invisible watermarks that can link back to C2PA manifests.
-
-
-
-- **[Content Authenticity Initiative (contentauth) organization](https://github.com/contentauth)**  
-
-  Central GitHub organization hosting the full suite of official open-source C2PA SDKs, tools, mobile libraries (Swift, Android), documentation, and security testing utilities.
-
-
-
-- **[provcheck](https://provcheck.ai/)**  
-
-  Offline, open-source C2PA Content Credentials verifier that checks cryptographic signatures, identity attestations, and neural watermarks without uploading files.
-
-
-
-- **[Watermark (local-first workbench)](https://github.com/kylosarc/watermark)**  
-
-  Local-first provenance and forensic workbench for inspecting C2PA Content Credentials, metadata, and watermarks entirely in the browser.
-
-
-
-- **[Numbers Protocol open components](https://github.com/numbersprotocol)**  
-
-  Open-source elements and tools related to the Numbers Protocol decentralized provenance network.
-
-
-
-### Additional Strong Open-Source Options
-
-- Core C2PA stack: **c2pa-rs**, **c2patool**, language bindings (Python, JS, C++, Swift, Android).
-
-- Watermarking & soft bindings: **TrustMark**.
-
-- Verification & forensics: **provcheck**, community workbenches.
-
-- Accepting that commercial platforms (Adobe Content Authenticity, Truepic, Reality Defender, Sensity, Hive, etc.) still lead in end-to-end capture solutions, large-scale detection models, enterprise support, and polished user experiences.
-
-
-
-**Frameworks for building custom systems**:  
-
-Use the official **c2pa-rs** + **c2patool** stack to create and verify Content Credentials → add **TrustMark** for durable watermarking → integrate language bindings into your applications → optionally combine with decentralized registries (e.g. Numbers Protocol). Ideal for platforms, publishers, and developers who want standards-based, transparent, and interoperable content provenance.
-
-
-
-## How to Contribute
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Content provenance and authenticity technologies are evolving rapidly. Cryptographic verification, watermark robustness, and detection accuracy have limitations. Always combine technical signals with human judgment and additional context. This list is not legal, forensic, or security advice.
-
-
+> A curated list of top SaaS products, enterprise APIs, and open-source tools for **Digital Content Provenance**, **C2PA Content Credentials**, **Deepfake Detection**, **Digital Watermarking**, and **Media Authenticity Verification**.
 
 ---
 
-**Made for creators, journalists, platform engineers, researchers, and open-source advocates.**
+## Overview
 
+In the era of generative AI, synthetic media, and deepfakes, establishing the origin, edit history, and authenticity of digital assets has become mission-critical for creators, publishers, journalism organizations, and enterprise platforms. 
 
+This repository tracks the leading **commercial SaaS platforms** and **open-source developer tools** designed to attach, verify, track, and inspect cryptographic provenance across images, video, audio, and documents.
 
-Let's keep digital content provenance transparent, standards-based, and verifiable.
+### Key Categories & Keywords
+- **C2PA Standard & Manifests**: Standards-based metadata binding led by the [Coalition for Content Provenance and Authenticity](https://c2pa.org/).
+- **Content Credentials**: Cryptographic seals and provenance manifests pioneered by the [Content Authenticity Initiative (CAI)](https://contentauthenticity.org/).
+- **Synthetic Media & Deepfake Detection**: Multi-modal AI models analyzing pixel/spectral artifacts.
+- **Durable & Invisible Watermarking**: Soft-binding watermarks linking media back to tamper-evident provenance data.
+- **Decentralized Media Verification**: Blockchain and distributed ledger tracking for immutable media timestamps and ownership.
+
+---
+
+## Table of Contents
+
+- [SaaS & Hosted Platforms](#saas--hosted-platforms)
+- [Open-Source GitHub Projects](#open-source-github-projects)
+- [Architecture & Implementation Blueprint](#architecture--implementation-blueprint)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer](#disclaimer)
+
+---
+
+## SaaS & Hosted Platforms
+
+The following table provides an overview of commercial platforms offering managed infrastructure, enterprise detection APIs, and capture verification.
+
+| Product / Platform | Primary Focus | Pricing Model | Free Tier & Limits | Website |
+| :--- | :--- | :--- | :--- | :--- |
+| **Adobe Content Authenticity / Content Credentials** | C2PA creation, inspection, and identity binding across Creative Cloud | Included in Adobe CC / Freemium web utilities | **Free**: Web inspect tool and Chrome extension are free; included at no extra cost in Adobe Creative Cloud and Firefly | [contentauthenticity.org](https://contentauthenticity.org/) |
+| **C2PA Verify** | Official reference web manifest verifier | Free / Open Public Utility | **Free**: Unlimited public manifest validation and asset inspection | [contentcredentials.org/verify](https://contentcredentials.org/verify) |
+| **Reality Defender** | Multi-modal enterprise deepfake & synthetic media detection (audio, video, image, text) | Subscription / Usage-based (starts ~$399/mo) | **Free Trial**: Available upon request / trial tier typically limited to ~50 scans/month | [realitydefender.com](https://www.realitydefender.com/) |
+| **Hive AI** | Automated AI content moderation & AI-generated media classification APIs | Usage-based API pricing (~$6 / 1k images; ~$6 / 1k video frames) | **Free Credits**: Free developer trial credits upon initial API signup | [thehive.ai](https://thehive.ai/) |
+| **Truepic** | Hardware-secured media capture, camera provenance, and visual inspection | B2B / Volume-based enterprise pricing (starts ~$1,000/mo) | **No Free Tier**: Demo and pilot test inspections available on request | [truepic.com](https://truepic.com/) |
+| **Attestiv** | Document & visual media fraud prevention with forensic tamper detection | Enterprise custom quotes (based on annual document/claim volume) | **No Free Tier**: Product demo and customized ROI analysis available | [attestiv.com](https://attestiv.com/) |
+| **Sensity AI** | Deepfake monitoring, synthetic media threat intelligence & verification APIs | Enterprise custom quotation (entry tiers from ~$29/mo) | **No Free Tier**: Demo and customized API sandbox trials available on request | [sensity.ai](https://sensity.ai/) |
+| **Optic (AI or Not)** | AI-generated image/audio detection and digital asset provenance verification | Enterprise API & tiered web scan subscriptions | **Freemium**: Limited free web checks on *AI or Not*; custom quotes for high-volume API access | [optic.xyz](https://optic.xyz/) |
+| **Numbers Protocol** | Decentralized media provenance network and blockchain asset verification | Token-based transaction gas / Enterprise API subscription | **Freemium Developer Tier**: Free developer API credits with paid upgrades and $NUM utility tokens | [numbersprotocol.io](https://www.numbersprotocol.io/) |
+| **GetReal Security** | Enterprise synthetic media detection and forensic provenance analysis | Enterprise custom quotes | **No Free Tier**: Private demonstrations available | [getrealsecurity.com](https://www.getrealsecurity.com/) |
+
+---
+
+## Open-Source GitHub Projects
+
+Official implementations, SDKs, and developer utilities for building standards-compliant C2PA and digital provenance pipelines.
+
+| Project | Language / Ecosystem | Description | Repository |
+| :--- | :--- | :--- | :--- |
+| **c2pa-rs** | Rust | Official C2PA reference implementation. High-performance library for reading, validating, and generating C2PA manifests. | [`contentauth/c2pa-rs`](https://github.com/contentauth/c2pa-rs) |
+| **c2patool** | Rust / CLI | Official command-line utility to inspect, create, and embed C2PA manifests into media files. Essential for CI/CD pipelines. | [`contentauth/c2patool`](https://github.com/contentauth/c2patool) |
+| **c2pa-python** | Python | Official Python bindings for `c2pa-rs`, enabling direct integration into ML/AI pipelines, FastAPI services, and scripts. | [`contentauth/c2pa-python`](https://github.com/contentauth/c2pa-python) |
+| **c2pa-js** | JavaScript / TypeScript | Client-side and Node.js SDKs for reading and displaying Content Credentials directly in browsers. | [`contentauth/c2pa-js`](https://github.com/contentauth/c2pa-js) |
+| **c2pa-cpp** | C++ | C++ wrapper around `c2pa-rs` designed for embedded systems, camera firmware, and native desktop applications. | [`contentauth/c2pa-cpp`](https://github.com/contentauth/c2pa-cpp) |
+| **TrustMark** | Python | Durable, invisible watermarking library designed to bind media assets to C2PA manifests even through re-compression and cropping. | [`adobe/trustmark`](https://github.com/adobe/trustmark) |
+| **provcheck** | TypeScript / Web | Client-side, privacy-first offline C2PA Content Credentials verifier without uploading media to third-party servers. | [`provcheck`](https://provcheck.ai/) |
+| **Watermark** | TypeScript / WebAssembly | Local-first browser workbench for forensic metadata inspection, C2PA manifest extraction, and neural watermark analysis. | [`kylosarc/watermark`](https://github.com/kylosarc/watermark) |
+| **Numbers Protocol Suite** | Python / JS | Open-source tools, capture libraries, and smart contracts for decentralized asset history and provenance anchoring. | [`numbersprotocol`](https://github.com/numbersprotocol) |
+| **Content Authenticity Org** | Multi-language | Complete ecosystem repository containing mobile libraries (iOS/Swift, Android), documentation, and test vectors. | [`contentauth`](https://github.com/contentauth) |
+
+---
+
+## Architecture & Implementation Blueprint
+
+When engineering an end-to-end digital content provenance pipeline:
+
+1. **Ingest & Capture**: Secure hardware-level capture (e.g. Truepic lens SDK) or cryptographic manifest generation using [`c2pa-rs`](https://github.com/contentauth/c2pa-rs) / [`c2pa-python`](https://github.com/contentauth/c2pa-python).
+2. **Resilience & Durable Binding**: Embed soft bindings using invisible watermarking like [`adobe/trustmark`](https://github.com/adobe/trustmark) so metadata survives social media re-encoding and stripping.
+3. **Verification & Forensics**: Inspect incoming files in-browser via [`c2pa-js`](https://github.com/contentauth/c2pa-js) or through privacy-preserving tools like [`provcheck`](https://provcheck.ai/).
+4. **Threat Detection**: Route unverified or suspicious media through deepfake and synthetic detection engines such as [Reality Defender](https://www.realitydefender.com/) or [Hive AI](https://thehive.ai/).
+
+---
+
+## How to Contribute
+
+Contributions are welcome! Please follow these guidelines:
+
+1. Fork the repository.
+2. Ensure entries are factual, active, and relevant to digital content authenticity, C2PA, or deepfake detection.
+3. If adding a SaaS product, please include details on pricing structure and free tier availability.
+4. Submit a Pull Request with a clear description of the project.
+
+---
+
+## Disclaimer
+
+This repository is a community-curated directory for informational and educational purposes. Inclusion does not imply endorsement. Content authenticity verification and synthetic media detection models are probabilistic; always combine technical signals with contextual analysis and human judgment.
